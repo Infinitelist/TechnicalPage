@@ -1,18 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
-
-:root{
-    --color1: #4d4e53; 
-    --color2: white;
+html, .body{
+    color: white;
+    background-color: #fb2024;
+    font-family: 'Rubik', Arial, sans-serif;
 }
 
+header{
+    color: lightcyan;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
 
-html, body{
+.js{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+article{
+    color: bisque;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+}
+/*************************************************************************************************************************************/
+
+#navbar{
+    position: fixed;
     min-width: 290px;
-    color: #4d4e53;
-    background-color: #ffffff;
-    font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.5;
+    top: 0px;
+    left: 0px;
+    width: 350px;
+    height: 100%;
 }
 
 @media only screen and (max-width: 875px){
@@ -23,50 +43,49 @@ html, body{
         left: 0px;
         width: 300px;
         height: 100%;
-        border-right: solid;
-        border-color: rgba(0, 22, 22, 0.4);
     }
 }
 
-#navbar{
-    position: fixed;
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    width: 300px;
+.nav-background{
     height: 100%;
-    border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4);
-}
-
-header{
-    color: black;
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: thin;
+    padding-right: 50px;
+    padding-left: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
 #navbar ul {
     height: 88%;
     padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 
 #navbar li{
-    color: #4d4e53;
-    border-top: 1px solid;
+    color: red;
     list-style: none;
     position: relative;
     width: 100%;
+    margin: 20px;
+    background-color: lightcyan;
+    border-radius: 20px;
 }
 
 #navbar a{
     display: block;
-    padding: 10px 30px;
-    color: #4d4e53;
+    padding: 25px 30px;
+    color: #fb2024;
     text-decoration: none;
     cursor: pointer;
+    font-size: 25px;
+}
+
+/**********************************************************************************************************************************/
+
+#main-doc{
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
 }
 
 @media only screen and (max-width: 875px){
@@ -78,16 +97,9 @@ header{
     }
 }
 
-#main-doc{
-    position: absolute;
-    margin-left: 310px;
-    padding: 20px;
-    margin-bottom: 110px;
-}
-
 #main-doc header{
-    text-align: left;
-    margin: 0px;
+    text-align: center;
+    margin: 10px;
 }
 
 section article{
@@ -96,9 +108,10 @@ section article{
 }
 
 code{
+    color: black;
     display: block;
     text-align: left;
-    white-space: pre-line;
+    white-space: normal;
     position: relative;
     word-break: normal;
     word-wrap: normal;
@@ -114,6 +127,92 @@ section li{
     margin: 15px 0px 0px 20px;
 }
 
-/**********************************************************************************************************************************************/
+/*******************************************************************************************************************************************/
+#Introduction, #What_you_should_already_know, #JavaScript_and_Java, 
+#Hello_world, #Variables, #Declaring_variables, #Variable_scope, 
+#Global_variables, #Constants, #Data_types, #if_else_statement, 
+#while_statement, #Function_declarations, #Reference{
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 50px 10px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 1px black;
+}
 
+#Introduction{
+    background-color: #fb2024;
+}
 
+#What_you_should_already_know{
+    background-color: #ff6e20;
+}
+
+#JavaScript_and_Java{
+    background-color: #fb2024;
+}
+
+#Hello_world{
+    background-color: #ff6e20;
+}
+
+#Variables{
+    background-color: #fb2024;
+}
+
+#Declaring_variables{
+    background-color: #ff6e20;
+}
+
+#Variable_scope{
+    background-color: #fb2024;
+}
+
+#Global_variables{
+    background-color: #ff6e20;
+}
+
+#Constants{
+    background-color: #fb2024;
+}
+
+#Data_types{
+    background-color: #ff6e20;
+}
+
+#if_else_statement{
+    background-color: #fb2024;
+}
+
+#while_statement{
+    background-color: #ff6e20;
+}
+
+#Function_declarations{
+    background-color: #fb2024;
+}
+
+#Reference{
+    background-color: #ff6e20;
+}
+
+/*******************************************************************************************************************************************/
+
+#logo{
+    position:relative;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f6ed5e;
+}
+
+.logo{
+    position: absolute;
+    left: 16px;
+    top: 3px;
+    color:#41423f;
+}
+
+/*******************************************************************************************************************************************/
